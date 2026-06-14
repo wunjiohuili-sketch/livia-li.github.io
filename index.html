@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李慧 / Livia Portfolio Website</title>
+  <meta name="description" content="李慧 / Livia 的个人作品集网站，展示个人简介、教育经历、研究方向、精选作品、获奖经历、软件技能与联系方式。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部导航：保留克制的作品集导航，手机端折叠显示 -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="返回首页">
+      <span class="brand-mark">LH</span>
+      <span>Livia Portfolio</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#profile">个人档案</a>
+      <a href="#works">精选作品</a>
+      <a href="#awards">获奖经历</a>
+      <a href="#skills">软件技能</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 首页 Hero：以超大文字排版和图纸式标注作为作品集首页主视觉 -->
+    <section class="hero" id="home">
+      <div class="hero-drawing hero-impact">
+        <div class="hero-meta hero-edge-tags">
+          <span>Portfolio Website / 2026</span>
+          <span>Interior Architecture</span>
+          <span>Humanistic Landscape Design</span>
+        </div>
+
+        <div class="hero-title-block">
+          <p class="hero-intro">Hi, I’m Livia, an interior architecture &amp; humanistic landscape design student.</p>
+
+          <h1 class="hero-display">
+            <span>LIVIA</span>
+            <span>PORTFOLIO</span>
+          </h1>
+
+          <div class="hero-copy">
+            <p class="hero-subtitle">室内建筑与人文景观设计方向研究生</p>
+            <p class="hero-statement">以空间叙事、行为分析与设计实验回应当代生活中的情感、社交与体验问题。</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="hero-button hero-button-primary" href="#works">View Works</a>
+            <a class="hero-button hero-button-secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-plate hero-annotations">
+          <span class="plate-label">Studio Notes</span>
+          <div class="hero-tags" aria-label="首页信息标签">
+            <span>Selected Works</span>
+            <span>Nanjing University of the Arts</span>
+            <span>Spatial Narrative</span>
+            <span>Model Making</span>
+          </div>
+        </div>
+
+        <div class="hero-note">
+          <span>Scale 1:1</span>
+          <span>Profile / Education / Selected Works / Awards / Skills</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-grid profile-section" id="profile">
+      <div class="section-label">01 / Profile</div>
+      <div class="section-content">
+        <p class="eyebrow">个人档案</p>
+        <h2>Profile</h2>
+
+        <!-- Profile：合并关于我、教育经历与研究方向，减少首页开头信息的分散感 -->
+        <div class="profile-layout">
+          <aside class="profile-panel">
+            <figure class="profile-image">
+              <img src="assets/images/profile.jpg" alt="李慧 Livia 个人照片">
+            </figure>
+            <dl class="profile-info">
+              <div>
+                <dt>中文名</dt>
+                <dd>李慧</dd>
+              </div>
+              <div>
+                <dt>英文名</dt>
+                <dd>Livia</dd>
+              </div>
+              <div>
+                <dt>方向</dt>
+                <dd>室内建筑与人文景观设计</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <div class="profile-main">
+            <section class="profile-block">
+              <div class="profile-block-heading">
+                <span>About</span>
+                <span>关于我</span>
+              </div>
+              <div class="text-block profile-about-text">
+                <p>
+                  我目前就读于南京艺术学院，研究方向为室内建筑与人文景观设计。本科阶段学习环境设计与室内设计，长期关注空间形式、使用行为、材料氛围与文化叙事之间的关系。
+                </p>
+                <p>
+                  我的设计实践涵盖疗愈空间、微居住空间、餐饮空间、虚拟展示空间、空间装置与手工模型等类型。相比单纯追求视觉效果，我更关注设计概念如何转化为空间结构、动线组织、材料语言和体验氛围，并尝试在作品中建立清晰的逻辑表达。
+                </p>
+              </div>
+            </section>
+
+            <section class="profile-block">
+              <div class="profile-block-heading">
+                <span>Education</span>
+                <span>教育经历</span>
+              </div>
+              <div class="education-compact">
+                <article class="education-item">
+                  <div class="education-time">2024.9 至今</div>
+                  <div class="education-body">
+                    <span class="card-number">Master</span>
+                    <h3>南京艺术学院</h3>
+                    <p>室内建筑与人文景观设计方向</p>
+                  </div>
+                </article>
+
+                <article class="education-item">
+                  <div class="education-time">2020.9 - 2024.6</div>
+                  <div class="education-body">
+                    <span class="card-number">Bachelor</span>
+                    <h3>南京艺术学院</h3>
+                    <p>环境设计专业，室内设计方向</p>
+                    <div class="meta-list">
+                      <span>GPA：3.97</span>
+                      <span>专业排名：2/77</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <section class="profile-block profile-research">
+            <div class="profile-block-heading">
+              <span>Research Focus</span>
+              <span>研究方向</span>
+            </div>
+            <div class="research-list">
+              <article class="research-mini-card">
+                <span class="card-number">R-01</span>
+                <h3>室内建筑与人文景观设计</h3>
+                <p>关注室内尺度、建筑界面、景观系统与人的体验之间的连续关系。</p>
+              </article>
+
+              <article class="research-mini-card">
+                <span class="card-number">R-02</span>
+                <h3>空间叙事与体验设计</h3>
+                <p>关注空间如何通过路径、场景、材料、光线和视觉秩序组织人的感知经验。</p>
+              </article>
+
+              <article class="research-mini-card">
+                <span class="card-number">R-03</span>
+                <h3>疗愈空间与情感体验</h3>
+                <p>关注空间中的情绪调节、身份认同、社交关系与沉浸式体验。</p>
+              </article>
+
+              <article class="research-mini-card">
+                <span class="card-number">R-04</span>
+                <h3>模块化与空间结构</h3>
+                <p>关注体块生成、模块组合、空间层次与功能复合之间的关系。</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-grid works-section" id="works">
+      <div class="section-label">02 / Works</div>
+      <div class="section-content">
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">精选作品</p>
+            <h2>Selected Works</h2>
+          </div>
+          <p class="section-note">Portfolio Index / Built Projects</p>
+        </div>
+
+        <!-- 竖向作品目录：更接近建筑作品集的项目索引阅读方式 -->
+        <div class="work-directory">
+          <a class="work-card" href="projects/work-01.html">
+            <div class="work-index">
+              <span>W-01</span>
+              <span>公共社交与疗愈空间设计</span>
+            </div>
+            <figure class="work-image-frame">
+              <img class="work-preview-image managed-image" src="assets/images/work-01-cover.jpg" alt="基于巴纳姆心理效应的疗愈空间设计">
+              <span>IMAGE PENDING</span>
+            </figure>
+            <div class="work-text">
+              <h3>基于巴纳姆心理效应的疗愈空间设计</h3>
+              <p class="work-title-en">Healing Space Designed by Barnum’s Psychological Effect</p>
+              <div class="tag-list">
+                <span>MBTI</span>
+                <span>巴纳姆效应</span>
+                <span>趣缘社交</span>
+                <span>身份认同</span>
+                <span>叙事空间</span>
+              </div>
+              <p>项目从快节奏社会中的心理压力与情感需求出发，将 MBTI 流行心理学与空间叙事结合，尝试构建一场寻找自我、获得身份认同与情感共鸣的空间体验。</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="projects/work-02.html">
+            <div class="work-index">
+              <span>W-02</span>
+              <span>模块化居住空间设计</span>
+            </div>
+            <figure class="work-image-frame">
+              <img class="work-preview-image managed-image" src="assets/images/work-02-cover.jpg" alt="未来微居空间设计">
+              <span>IMAGE PENDING</span>
+            </figure>
+            <div class="work-text">
+              <h3>未来微居空间设计</h3>
+              <p class="work-title-en">Future Micro-Living Space Design / BOX IN THE BOX</p>
+              <div class="tag-list">
+                <span>微居住</span>
+                <span>模块化</span>
+                <span>盒中盒</span>
+                <span>共享空间</span>
+                <span>青年居住</span>
+              </div>
+              <p>项目以单身青年居住需求为对象，通过错落堆叠的盒子单元组织个人空间与公共空间，在有限尺度中探索私密性、交流性与空间层次之间的平衡。</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="projects/work-03.html">
+            <div class="work-index">
+              <span>W-03</span>
+              <span>餐饮空间设计</span>
+            </div>
+            <figure class="work-image-frame">
+              <img class="work-preview-image managed-image" src="assets/images/work-03-cover.jpg" alt="基于海盐文化的餐饮空间设计">
+              <span>IMAGE PENDING</span>
+            </figure>
+            <div class="work-text">
+              <h3>基于海盐文化的餐饮空间设计</h3>
+              <p class="work-title-en">Dining Space Design Based on Sea Salt Culture / 盐韵空间</p>
+              <div class="tag-list">
+                <span>海盐文化</span>
+                <span>晶体结构</span>
+                <span>餐饮空间</span>
+                <span>材料氛围</span>
+                <span>地域文化</span>
+              </div>
+              <p>项目以盐城海盐文化为切入点，提取海盐晶体的形态、结构和半透明质感，通过重复、叠加、旋转等方式转化为空间构成、材料语言与就餐氛围。</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="projects/work-04.html">
+            <div class="work-index">
+              <span>W-04</span>
+              <span>虚拟疗愈展示空间设计</span>
+            </div>
+            <figure class="work-image-frame">
+              <img class="work-preview-image managed-image" src="assets/images/work-04-cover.jpg" alt="基于管道元素的虚拟疗愈展示空间">
+              <span>IMAGE PENDING</span>
+            </figure>
+            <div class="work-text">
+              <h3>基于管道元素的虚拟疗愈展示空间</h3>
+              <p class="work-title-en">Virtual Healing Display Space Based on Pipeline Elements</p>
+              <div class="tag-list">
+                <span>管道元素</span>
+                <span>虚拟空间</span>
+                <span>疗愈体验</span>
+                <span>绿植</span>
+                <span>未来感</span>
+              </div>
+              <p>项目以“管道”作为主要连接构件，从平面构成到三维形体生成，结合绿植、色彩与线性路径组织，构建轻松、平和、具有未来感的虚拟疗愈空间。</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="projects/work-05.html">
+            <div class="work-index">
+              <span>W-05</span>
+              <span>空间模型与实体推演</span>
+            </div>
+            <figure class="work-image-frame">
+              <img class="work-preview-image managed-image" src="assets/images/work-05-cover.jpg" alt="手工模型展示">
+              <span>IMAGE PENDING</span>
+            </figure>
+            <div class="work-text">
+              <h3>手工模型展示</h3>
+              <p class="work-title-en">Physical Model Works</p>
+              <div class="tag-list">
+                <span>手工模型</span>
+                <span>体块关系</span>
+                <span>空间推演</span>
+                <span>材料表达</span>
+              </div>
+              <p>展示通过实体模型进行空间关系、体块组织与场景氛围推敲的过程，体现从概念到空间实体的转译能力。</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="projects/work-06.html">
+            <div class="work-index">
+              <span>W-06</span>
+              <span>空间装置与形态研究</span>
+            </div>
+            <figure class="work-image-frame">
+              <img class="work-preview-image managed-image" src="assets/images/work-06-cover.jpg" alt="身体与空间">
+              <span>IMAGE PENDING</span>
+            </figure>
+            <div class="work-text">
+              <h3>身体与空间</h3>
+              <p class="work-title-en">Body and Space</p>
+              <div class="tag-list">
+                <span>身体动态</span>
+                <span>动作轨迹</span>
+                <span>空间结构</span>
+                <span>视觉化表达</span>
+              </div>
+              <p>项目以身体动作为切入点，分析动作变化形成的曲线、路径和面，将身体动态转化为三维空间中的结构形态，探索身体与空间之间的内在联系。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-grid compact-section awards-section" id="awards">
+      <div class="section-label">03 / Awards</div>
+      <div class="section-content">
+        <p class="eyebrow">获奖经历</p>
+        <h2>Awards</h2>
+
+        <!-- 获奖经历：按年份倒序排列，左侧年份，右侧奖项 -->
+        <div class="awards-timeline">
+          <article class="award-year">
+            <h3>2026</h3>
+            <ul>
+              <li>米兰设计周——中国高校设计学科师生优秀作品展，“艺术疗愈与媒介设计”赛道，二等奖</li>
+            </ul>
+          </article>
+
+          <article class="award-year">
+            <h3>2025</h3>
+            <ul>
+              <li>第十九届“好创意”暨全国数字艺术设计大赛，交通艺术设计类，国家二等奖</li>
+              <li>第十三届未来设计师·全国高校数字艺术设计大赛，全国总决赛三等奖</li>
+              <li>第十三届未来设计师·全国高校数字艺术设计大赛，江苏赛区二等奖</li>
+              <li>东方创意之星创新设计大赛学生赛，江苏赛区研究生组铜奖</li>
+            </ul>
+          </article>
+
+          <article class="award-year">
+            <h3>2024</h3>
+            <ul>
+              <li>第二届研究生“美丽中国”创新设计大赛，设计研究·环境空间设计赛道，一等奖</li>
+              <li>FA 国际前沿创新艺术设计大赛，中国赛区银奖</li>
+              <li>第六届江苏省高校设计作品展，学生组三等奖</li>
+              <li>第十八届“创意中国”设计大奖，环艺设计类二等奖</li>
+              <li>UKDA 英国新概念设计奖，分类区入围奖</li>
+            </ul>
+          </article>
+
+          <article class="award-year">
+            <h3>2023</h3>
+            <ul>
+              <li>第九届全国青年科普创新实验暨作品大赛，江苏赛区智慧社区大学组三等奖</li>
+              <li>第六届“憩·美丽中国”艺术设计大赛，学生组银奖</li>
+              <li>第十四届“龙腾杯”江苏艺术设计大赛，学生组铜奖</li>
+              <li>2023“学院杯”中国室内与环境设计大赛，室内组优秀奖</li>
+            </ul>
+          </article>
+
+          <article class="award-year">
+            <h3>2022</h3>
+            <ul>
+              <li>江苏省第十七届室内装饰设计大赛，学生组居民住宅类二等奖</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-grid compact-section skills-section" id="skills">
+      <div class="section-label">04 / Skills</div>
+      <div class="section-content">
+        <p class="eyebrow">软件技能</p>
+        <h2>Skills</h2>
+
+        <!-- 技能分组表达，避免堆成一排标签 -->
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>平面与排版</h3>
+            <div class="skill-tags">
+              <span>Photoshop</span>
+              <span>Illustrator</span>
+              <span>InDesign</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>绘图与建模</h3>
+            <div class="skill-tags">
+              <span>AutoCAD</span>
+              <span>SketchUp</span>
+              <span>3ds Max</span>
+              <span>Rhino</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>渲染与表现</h3>
+            <div class="skill-tags">
+              <span>Enscape</span>
+              <span>D5 Render</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>AI 辅助与文本图像整合</h3>
+            <div class="skill-tags">
+              <span>ChatGPT</span>
+              <span>DeepSeek</span>
+              <span>Gemini</span>
+              <span>Claude</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>语言技能与证书</h3>
+            <div class="skill-subgroup">
+              <h4>语言能力</h4>
+              <div class="skill-tags">
+                <span>英语四级：533</span>
+                <span>英语六级：512</span>
+                <span>普通话二级甲等</span>
+              </div>
+            </div>
+            <div class="skill-subgroup">
+              <h4>资格证书</h4>
+              <div class="skill-tags">
+                <span>小学美术教师资格证</span>
+                <span>驾驶证</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>综合能力</h3>
+            <div class="skill-tags">
+              <span>文案整理</span>
+              <span>图文排版</span>
+              <span>方案表达</span>
+              <span>视觉分析</span>
+              <span>资料整合</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-grid contact-section" id="contact">
+      <div class="section-label">05 / Contact</div>
+      <div class="section-content">
+        <p class="eyebrow">联系</p>
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:2826841179@qq.com">
+            <span>Email</span>
+            <strong>2826841179@qq.com</strong>
+            <em>Send Email →</em>
+          </a>
+          <a class="contact-card" href="tel:13776852499">
+            <span>Phone</span>
+            <strong>13776852499</strong>
+            <em>Call →</em>
+          </a>
+          <button class="contact-card" type="button" data-qr-open="wechat">
+            <span>WeChat</span>
+            <strong>扫码添加微信</strong>
+            <em>Show QR →</em>
+          </button>
+          <button class="contact-card" type="button" data-qr-open="qq">
+            <span>QQ</span>
+            <strong>扫码添加 QQ</strong>
+            <em>Show QR →</em>
+          </button>
+          <a class="contact-card" href="https://www.xiaohongshu.com/user/profile/599ee4b650c4b4029b82e7ce" target="_blank" rel="noopener noreferrer">
+            <span>Xiaohongshu</span>
+            <strong>Livia / 小红书主页</strong>
+            <em>Open Profile →</em>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="qr-modal" id="qr-modal" aria-hidden="true">
+      <div class="qr-modal-backdrop" data-qr-close></div>
+      <div class="qr-modal-panel" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+        <button class="qr-modal-close" type="button" aria-label="关闭二维码弹窗" data-qr-close>×</button>
+        <p class="eyebrow" id="qr-modal-title">WeChat</p>
+        <h2>Scan to connect</h2>
+        <figure class="qr-frame" data-qr-frame>
+          <img class="managed-image" src="assets/images/wechat-qr.jpg" alt="WeChat 二维码" data-qr-image>
+          <span>IMAGE PENDING</span>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 李慧 Livia</span>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
